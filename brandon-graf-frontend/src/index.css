@@ -11,3 +11,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ======= LANDING PAGE ====== */ 
+
+:root {
+  --white: white;
+  --black: black;
+  --lilac: #5A67AE;
+  --red: #D2494C;
+  --yellow: #F9D03C;
+  --pea-shoot: #85C598;
+  --app-height: 100%;
+}
+
+/* ======= FONTS ====== */ 
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======= FLEXBOX ====== */ 
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+/* ======= LANDING PAGE ====== */ 
+
+.landing--page {
+  background-color: black;
+  height: var(--app-height)
+}
+
+.landing--page--logo {
+  height: 150px;
+  left: 10%;
+  position: absolute;
+  top: 15%;
+}
+
+.landing--page--menu {
+  height: 150px;
+  right: 10%;
+  position: absolute;
+  bottom: 15%;
+}
+
+.landing--page--menu h1 {
+  margin: 0px 4px;
+  z-index: 10;
+}
+
+.rainbow--bar {
+  display: flex;
+  height: 10px;
+  margin-left: 70px;
+  margin-top: -12px;
+  width: 220px;
+  z-index: 9;
+}
+
+.rainbow--bar div {
+  height: 100%;
+}
+
+.rainbow--bar div:nth-child(1) {
+  width: 13%;
+  background-color: var(--lilac)
+}
+
+.rainbow--bar div:nth-child(2) {
+  width: 10%;
+  background-color: var(--red)
+}
+
+.rainbow--bar div:nth-child(3) {
+  width: 20%;
+  background-color: var(--yellow)
+}
+
+.rainbow--bar div:nth-child(4) {
+  width: 9%;
+  background-color: var(--pea-shoot)
+}
+
+.rainbow--bar div:nth-child(5) {
+  width: 25%;
+  background-color: var(--black)
+}
+
+.rainbow--bar div:nth-child(6) {
+  width: 23%;
+  background-color: var(--white)
+}
