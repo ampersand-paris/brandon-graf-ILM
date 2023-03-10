@@ -1,33 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router,
+  Routes,
+  Route } from "react-router-dom";
 
-import { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown'
+import appHeight from "./appHeight" // Needs to be imported to work
+
+// ====== COMPONENTS ======
+import Landing from "./Landing";
+import About from './Dance/About/about';
+import DanceMenu from './Partials/danceMenu';
+import HealingMenu from "./Partials/healingMenu";
 
 function App() {
 
-  const [about, setAbout ] = useState([]);
-
-  useEffect(() => {
-    update()
-  }, [])
-
-
-  function update() {
-    console.log(`${process.env.REACT_APP_BACKEND}api/about`)
-    fetch(`${process.env.REACT_APP_BACKEND}api/about`)
-      .then(res => res.json())
-      .then(about => {
-        console.log(about)
-        setAbout(about.data)
-      })
-  }
-
   return (
-    <div className="App">
-      <h1>hello</h1>
-      <ReactMarkdown>{about.attributes.Body}</ReactMarkdown>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/dance" element={<DanceMenu />} />
+        <Route path="/dance/about" element={<About />} />
+        <Route path="/healing" element={<HealingMenu />} />
+      </Routes>
+    </Router>
   );
 }
 
