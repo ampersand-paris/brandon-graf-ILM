@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HealingFooter from "./healingFooter";
 
 const HealingMenu = () => {
 
@@ -25,6 +26,7 @@ const HealingMenu = () => {
                     </div>
                 </div>
             </div>
+            <HealingFooter />
         </>
     )
 }
