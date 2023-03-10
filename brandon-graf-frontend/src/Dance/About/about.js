@@ -22,7 +22,7 @@ const [about, setAbout ] = useState([]);
   return (
     <div className="App">
       <h1>hello</h1>
-      <ReactMarkdown>{about.attributes.Body}</ReactMarkdown>
+      <p>{about.attributes.Body}</p>
     </div>
   );
 

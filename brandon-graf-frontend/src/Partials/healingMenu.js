@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DanceMenu = () => {
+const HealingMenu = () => {
 
     return (
         <>
@@ -12,10 +12,10 @@ const DanceMenu = () => {
                         <Link><h3>about</h3></Link>
                     </div>
                     <div>
-                        <Link><h3>studio services</h3></Link>
+                        <Link><h3>booking</h3></Link>
                     </div>
                     <div>
-                        <Link><h3>film</h3></Link>
+                        <Link><h3>faq</h3></Link>
                     </div>
                     <div>
                         <Link><h3>contact</h3></Link>
@@ -29,4 +29,4 @@ const DanceMenu = () => {
     )
 }
 
-export default DanceMenu;
+export default HealingMenu;

@@ -1,42 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router,
+  Routes,
+  Route } from "react-router-dom";
+
 import appHeight from "./appHeight" // Needs to be imported to work
 
-import { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown'
-import { Link } from 'react-router-dom'
+// ====== COMPONENTS ======
+import Landing from "./Landing";
+import About from './Dance/About/about';
+import DanceMenu from './Partials/danceMenu';
+import HealingMenu from "./Partials/healingMenu";
 
 function App() {
 
   return (
-    <div className="landing--page">
-      <img className="landing--page--logo" src="/Images/Logo.png" />
-      <div className="landing--page--menu flex column">
-        <div className="flex">
-          <h1>
-            {/* <Link
-              to='/dance/about'>
-            dance</Link> */}
-            dance
-          </h1>
-          <h1>|</h1>
-          <h1>
-            {/* <Link
-              to='/healing/about'>
-            healing</Link> */}
-            healing
-          </h1>
-        </div>
-        <div className="rainbow--bar">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/dance" element={<DanceMenu />} />
+        <Route path="/dance/about" element={<About />} />
+        <Route path="/healing" element={<HealingMenu />} />
+      </Routes>
+    </Router>
   );
 }
 
