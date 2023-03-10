@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DanceFooter from "./danceFooter";
 
 const DanceMenu = () => {
 
@@ -25,6 +26,7 @@ const DanceMenu = () => {
                     </div>
                 </div>
             </div>
+            <DanceFooter />
         </>
     )
 }

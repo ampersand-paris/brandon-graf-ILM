@@ -27,7 +27,7 @@ code {
 
 /* ======= FONTS ====== */ 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -101,6 +101,76 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--white);
 }
 
+/* ======= FOOTER ====== */ 
+
+.footer--container {
+  padding: 25px 50px; 
+}
+
+.footer--container h3 {
+  margin: 10px 0px;
+}
+
+.footer--grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
+}
+
+.footer--logo {
+  margin-bottom: 30px;
+  width: 200px;
+}
+
+.social--icon {
+  margin-right: 10px;
+  height: 30px;  
+}
+
+.footer--rainbow--bar  {
+  display: flex;
+}
+
+.footer--rainbow--bar div {
+  height: 30px;
+}
+
+.footer--rainbow--bar div:nth-child(1) {
+  width: 5%;
+  background-color: var(--red);
+}
+
+.footer--rainbow--bar div:nth-child(2) {
+  width: 25%;
+  background-color: var(--lilac);
+}
+
+.footer--rainbow--bar div:nth-child(3) {
+  width: 40%;
+  background-color: var(--pea-shoot);
+}
+
+.footer--rainbow--bar div:nth-child(4) {
+  width: 5%;
+  background-color: var(--white);
+}
+
+.footer--rainbow--bar div:nth-child(5) {
+  width: 25%;
+  background-color: var(--yellow);
+}
+
+.healing--footer {
+  background-color: var(--yellow);
+}
+
+.healing--footer p {
+  color: var(--lilac);
+}
+
+.healing--footer h3 {
+  color: var(--lilac);
+}
 /* ======= LANDING PAGE ====== */ 
 
 .landing--page {
