@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Didot";   /*Can be any text*/
+  src: local("Didot"),
+    url("./fonts/GFSDidot-Regular.ttf") format("truetype");
+}
+
 body {
   background-color: var(--black);
   margin: 0;
@@ -25,12 +31,19 @@ code {
   --app-height: 100%;
 }
 
+/* ======= COLORS ====== */ 
+
+.bg--lilac {
+  background-color: var(--lilac);
+}
+
 /* ======= FONTS ====== */ 
 
 h1, h2, h3, h4, h5, h6, p {
   color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* ======= FLEXBOX ====== */ 
 
@@ -244,3 +257,30 @@ h1, h2, h3, h4, h5, h6, p {
   width: 23%;
   background-color: var(--white)
 }
+
+/* ====== CONTENT PAGES ====== */
+
+.intro--container {
+  display: flex;
+  justify-content: space-around;
+  min-height: 50vH;
+  padding: 50px 50px;
+}
+
+.intro--text {
+  width: 50%;
+}
+
+.page--intro {
+  font-size: 60px;
+  font-family: "Didot";
+}
+
+.body--container {
+  padding: 50px 50px;
+}
+
+.body--text {
+  width: 50%;
+}
+

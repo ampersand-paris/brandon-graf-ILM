@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "healing_abouts",
+  "info": {
+    "singularName": "healing-about",
+    "pluralName": "healing-abouts",
+    "displayName": "Healing About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "About_Header": {
+      "type": "string"
+    },
+    "ILM_Header": {
+      "type": "string"
+    },
+    "ILM_Body": {
+      "type": "richtext"
+    },
+    "About_Body": {
+      "type": "richtext"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    }
+  }
+}

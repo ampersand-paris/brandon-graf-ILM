@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About"
+    "displayName": "About",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "Body": {
+      "type": "richtext"
+    },
+    "Intro": {
+      "type": "string"
+    },
+    "Intro_Paragraph": {
+      "type": "text"
+    },
+    "Biography": {
+      "type": "richtext"
+    },
+    "Artist_Statement": {
       "type": "richtext"
     }
   }

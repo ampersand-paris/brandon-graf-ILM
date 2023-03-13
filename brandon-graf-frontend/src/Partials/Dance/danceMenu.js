@@ -1,19 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
+import About from "../../Dance/About/about";
 import DanceFooter from "./danceFooter";
 
 const DanceMenu = () => {
 
     return (
-        <>
+        <div>
             <div className="menu--padding">
-                <a href="/"><img className="menu--logo" src="Images/Logo.png" alt="brand logo: a circle made of curvivng lines and Brandon Graf"/></a>
+                <a href="/"><img className="menu--logo" src="../Images/Logo.png" alt="brand logo: a circle made of curvivng lines and Brandon Graf"/></a>
                 <div className="menu--rainbow flex">
                     <div>
-                        <Link><h3>about</h3></Link>
+                        <Link to="/dance/about"><h3>about</h3></Link>
                     </div>
                     <div>
-                        <Link><h3>studio services</h3></Link>
+                        <Link to="/dance/studio-services"><h3>studio services</h3></Link>
                     </div>
                     <div>
                         <Link><h3>film</h3></Link>
@@ -26,8 +27,7 @@ const DanceMenu = () => {
                     </div>
                 </div>
             </div>
-            <DanceFooter />
-        </>
+        </div>
     )
 }
 
