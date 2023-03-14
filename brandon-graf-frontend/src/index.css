@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Didot";   /*Can be any text*/
+  src: local("Didot"),
+    url("./fonts/GFSDidot-Regular.ttf") format("truetype");
+}
+
 body {
   background-color: var(--black);
   margin: 0;
@@ -13,8 +19,6 @@ code {
     monospace;
 }
 
-/* ======= LANDING PAGE ====== */ 
-
 :root {
   --white: white;
   --black: black;
@@ -23,6 +27,12 @@ code {
   --yellow: #F9D03C;
   --pea-shoot: #85C598;
   --app-height: 100%;
+}
+
+/* ======= COLORS ====== */ 
+
+.bg--lilac {
+  background-color: var(--lilac);
 }
 
 /* ======= FONTS ====== */ 
@@ -40,6 +50,26 @@ h1, h2, h3, h4, h5, h6, p {
 
 .column {
   flex-direction: column;
+}
+
+.ai--center {
+  align-items: center;
+}
+
+.ac--center {
+  align-content: center;
+}
+
+.jc--center {
+  justify-content: center;
+}
+
+/* ====== GRID ====== */
+
+.grid--container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
 }
 
 /* ====== MENUS ====== */
@@ -174,7 +204,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* ======= LANDING PAGE ====== */ 
 
 .landing--page {
-  background-color: black;
+  background-image: url('../public/Images/Backgrounds/Landing-Page.png');
   height: var(--app-height)
 }
 
@@ -243,4 +273,183 @@ h1, h2, h3, h4, h5, h6, p {
 .rainbow--bar div:nth-child(6) {
   width: 23%;
   background-color: var(--white)
+}
+
+/* ====== CONTENT PAGES ====== */
+
+.about--header {
+  position: absolute;
+  width: 33vW;
+}
+
+.body--container {
+  background-image: url('../public/Images/Backgrounds/Page-Background.png');
+  padding: 50px 100px;
+}
+
+.body--text {
+  margin-top: 150px;
+  padding: 50px 30px;
+  min-width: 400px;
+  width: 60%;
+}
+
+.intro--container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
+  min-height: 50vH;
+  padding: 50px 100px;
+}
+
+.intro--text {
+  padding: 50px 30px;
+  min-width: 400px;
+  width: 60%;
+}
+
+.page--intro {
+  font-size: 68px;
+  font-family: "Didot";
+  width: 50%;
+}
+
+  /* ====== DANCE ABOUT ====== */
+
+.headshot {
+  min-width: 300px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .intro--container {
+    padding: 50px 30px;
+  }
+
+  .intro--text {
+    min-width: 300px;
+  }
+
+  .headshot {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .page--intro {
+    width: 100%;
+  }
+
+  /* ====== MENU ====== */
+
+  .menu--logo {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 125px;
+  }
+
+  .menu--padding {
+    padding-top: 10px;
+  }
+
+  .menu--rainbow {
+    display: flex;
+    width: 100vW;
+  }
+
+  .menu--rainbow div:nth-child(1) {
+    width: 18%;
+  }
+
+  .menu--rainbow div:nth-child(2) {
+    width: 43%;
+  }
+
+  .menu--rainbow div:nth-child(3) {
+    width: 13%;
+  }
+
+  .menu--rainbow div:nth-child(4) {
+    width: 23%;
+  }
+
+  .menu--rainbow div:nth-child(5) {
+    width: 3%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+
+  /* ====== FLEXBOX ====== */
+
+  .mobile-flex-row {
+    flex-direction: row;
+  }
+  /* ====== GRID ====== */
+
+  /* ====== FOOTER ====== */
+
+  .footer--container {
+    padding: 20px 20px;
+  }
+
+  .footer--grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer--logo {
+    width: 125px;
+    margin: 20px 0px 10px 0px;
+  }
+
+  /* ====== PAGE CONTENT ====== */
+
+  .grid--container {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .about--header {
+    position: relative;
+    width: 50%;
+  }
+  
+  .body--text {
+    min-width: 0px;
+    width: auto;
+    margin-top: 0px;
+    padding: 20px 0px;
+  }
+
+  .body--container {
+    background-image: url('../public/Images/Backgrounds/Page-Background.png');
+    padding: 20px 20px;
+    width: auto;
+  }
+
+  .intro--container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .intro--text {
+    min-width: 0px;
+    padding: 20px 0px;
+    width: auto;
+  }
+
+  .page--intro {
+    font-size: 60px;
+    width: auto;
+  }
+
+  /* ====== DANCE ABOUT ====== */
+
+  .headshot {
+    width: auto;
+  }
+  
 }
