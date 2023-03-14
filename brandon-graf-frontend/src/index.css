@@ -19,8 +19,6 @@ code {
     monospace;
 }
 
-/* ======= LANDING PAGE ====== */ 
-
 :root {
   --white: white;
   --black: black;
@@ -187,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* ======= LANDING PAGE ====== */ 
 
 .landing--page {
-  background-color: black;
+  background-image: url('../public/Images/Backgrounds/Landing-Page.png');
   height: var(--app-height)
 }
 
@@ -261,26 +259,140 @@ h1, h2, h3, h4, h5, h6, p {
 /* ====== CONTENT PAGES ====== */
 
 .intro--container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
   min-height: 50vH;
-  padding: 50px 50px;
+  padding: 50px 100px;
 }
 
 .intro--text {
-  width: 50%;
+  padding: 50px 30px;
+  min-width: 500px;
+  width: 60%;
 }
 
 .page--intro {
-  font-size: 60px;
+  font-size: 68px;
   font-family: "Didot";
-}
-
-.body--container {
-  padding: 50px 50px;
-}
-
-.body--text {
   width: 50%;
 }
 
+.body--container {
+  background-image: url('../public/Images/Backgrounds/Page-Background.png');
+  padding: 50px 100px;
+}
+
+.body--text {
+  margin-top: 150px;
+  padding: 50px 30px;
+  min-width: 500px;
+  width: 60%;
+}
+
+.grid--container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
+}
+
+.about--header {
+  position: absolute;
+  width: 33vW;
+}
+
+.headshot {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* ====== MENU ====== */
+
+  .menu--logo {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 125px;
+  }
+
+  .menu--padding {
+    padding-top: 10px;
+  }
+
+  .menu--rainbow {
+    display: flex;
+    width: 100vW;
+  }
+
+  .menu--rainbow div:nth-child(1) {
+    width: 18%;
+  }
+
+  .menu--rainbow div:nth-child(2) {
+    width: 43%;
+  }
+
+  .menu--rainbow div:nth-child(3) {
+    width: 13%;
+  }
+
+  .menu--rainbow div:nth-child(4) {
+    width: 23%;
+  }
+
+  .menu--rainbow div:nth-child(5) {
+    width: 3%;
+  }
+
+    /* ====== FOOTER ====== */
+
+
+  /* ====== PAGE CONTENT ====== */
+
+  .grid--container {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .about--header {
+    position: relative;
+    width: 100%;
+  }
+  
+  .body--text {
+    min-width: 0px;
+    width: auto;
+    margin-top: 0px;
+    padding: 20px 0px;
+  }
+
+  .body--container {
+    background-image: url('../public/Images/Backgrounds/Page-Background.png');
+    padding: 20px 20px;
+    width: auto;
+  }
+
+  .intro--container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .intro--text {
+    min-width: 0px;
+    padding: 20px 0px;
+    width: auto;
+  }
+
+  .page--intro {
+    font-size: 60px;
+    width: auto;
+  }
+
+  /* ====== DANCE ABOUT ====== */
+
+  .headshot {
+    width: auto;
+  }
+  
+}
