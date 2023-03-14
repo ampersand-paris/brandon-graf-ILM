@@ -19,7 +19,9 @@ function About() {
   return (
     <>
       <div className="intro--container bg--lilac">
-        <img className="headshot" src="../Images/Portraits/Brandon_Headshot.png" />
+        <div className=" flex column jc--center">
+          <img className="headshot" src="../Images/Portraits/Brandon_Headshot.png" />
+        </div>
         <div className="intro--text">          
           <h1 className="page--intro">{data.data.attributes.Intro}</h1>
           <p>{data.data.attributes.Intro_Paragraph}</p>
