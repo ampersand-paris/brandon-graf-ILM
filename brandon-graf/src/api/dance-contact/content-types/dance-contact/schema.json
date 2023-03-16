@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "dance_contacts",
+  "info": {
+    "singularName": "dance-contact",
+    "pluralName": "dance-contacts",
+    "displayName": "Dance Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Intro": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Instagram": {
+      "type": "string"
+    }
+  }
+}

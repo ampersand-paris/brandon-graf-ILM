@@ -27,6 +27,7 @@ code {
   --yellow: #F9D03C;
   --pea-shoot: #85C598;
   --app-height: 100%;
+  
 }
 
 /* ======= COLORS ====== */ 
@@ -34,6 +35,15 @@ code {
 .bg--lilac {
   background-color: var(--lilac);
 }
+
+.bg--pea--shoot {
+  background-color: var(--pea-shoot);
+}
+
+.bg--red {
+  background-color: var(--red);
+}
+
 
 /* ======= FONTS ====== */ 
 
@@ -294,6 +304,14 @@ h1, h2, h3, h4, h5, h6, p {
   width: 60%;
 }
 
+.fifty--fifty--container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  min-height: 50vH;
+  padding: 50px 100px;
+}
+
 .intro--container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -308,23 +326,103 @@ h1, h2, h3, h4, h5, h6, p {
   width: 60%;
 }
 
+.fifty--fifty--intro--text {
+  padding: 50px 30px 50px 0px;
+}
+
+.intro--video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .page--intro {
   font-size: 68px;
   font-family: "Didot";
-  width: 50%;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-  /* ====== DANCE ABOUT ====== */
+.red--triangle {
+  height: 50px;
+}
+/* ====== DANCE ABOUT ====== */
 
 .headshot {
   min-width: 300px;
   width: 100%;
 }
 
+/* ====== STUDIO SERVICES ====== */
+
+.service--details h3 {
+  margin: 0px;
+}
+
+.bullet {
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  height: 15px;
+  width: 15px
+}
+
+.services--list h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+ 
+}
+
+.services--list div.service--item {
+  margin-top: 40px;
+}
+
+.inside {
+  margin-left: 5px;
+}
+
+.services--list div:nth-child(n) .bullet {
+  border-color: var(--yellow);
+}
+
+.services--list div:nth-child(2n) .bullet {
+  border-color: var(--pea-shoot);
+}
+
+.services--list div:nth-child(3n) .bullet {
+  border-color: var(--red);
+}
+
+.services--list div:nth-child(4n) .bullet {
+  border-color: var(--lilac);
+}
+
+.services--list div:nth-child(5n) .bullet {
+  border-color: var(--white);
+}
+
 @media only screen and (max-width: 900px) {
 
   .intro--container {
     padding: 50px 30px;
+  }
+
+  .fifty--fifty--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro--video {
+    
   }
 
   .intro--text {
@@ -383,6 +481,10 @@ h1, h2, h3, h4, h5, h6, p {
 
   /* ====== FLEXBOX ====== */
 
+  .mobile--ai--center {
+    align-items: center;
+  }
+
   .mobile-flex-row {
     flex-direction: row;
   }
@@ -429,10 +531,16 @@ h1, h2, h3, h4, h5, h6, p {
     width: auto;
   }
 
+  .fifty--fifty--container {
+    padding: 20px 20px;
+    min-height: 73vH;
+  }
+
   .intro--container {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
+    min-height: 75vH;
   }
 
   .intro--text {
@@ -442,7 +550,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .page--intro {
-    font-size: 60px;
+    font-size: 40px;
     width: auto;
   }
 

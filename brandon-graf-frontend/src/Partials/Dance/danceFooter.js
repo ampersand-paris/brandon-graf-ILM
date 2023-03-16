@@ -17,7 +17,7 @@ const DanceFooter = () => {
                 <div className="footer--grid">
                     <div className="flex column">
                         <a href="/"><img className="footer--logo" src="../Images/Logo.png" alt="brand logo: a circle made of curvivng lines and Brandon Graf"/></a>
-                        <div className="flex column mobile-flex-row ai--center">
+                        <div className="flex column mobile-flex-row mobile--ai--center">
                             <a href="https://www.instagram.com/brandon_graf95/?hl=en" target="_blank"><img className="social--icon" src="../Images/Instagram_Glyph_White.png" alt="Instagram logo"/></a>
                             <p>contact me:
                                 <br></br>
