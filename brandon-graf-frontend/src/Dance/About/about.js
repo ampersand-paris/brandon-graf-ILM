@@ -36,7 +36,7 @@ function About() {
         </div>
         <div className="grid--container">
           <div>
-            <img className="about--header" src="../Images/Headings/Biography.png" />
+            <img className="about--header" src="../Images/Headings/Artist_Statement.png" />
           </div>
           <p className="body--text"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
         </div>

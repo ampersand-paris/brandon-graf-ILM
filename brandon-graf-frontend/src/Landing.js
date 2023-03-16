@@ -9,11 +9,11 @@ function Landing() {
       <div className="landing--page--menu flex column">
         <div className="flex">
             <h1>
-                <Link to='/dance'>dance</Link>
+                <Link to='/dance/about'>dance</Link>
             </h1>
             <h1>|</h1>
             <h1>
-                <Link to='/healing'>healing</Link>
+                <Link to='/healing/about'>healing</Link>
             </h1>
         </div>
         <div className="rainbow--bar">

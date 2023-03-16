@@ -4,27 +4,60 @@ import DanceMenu from "../../Partials/Dance/danceMenu";
 
 function StudioServices() {
 
-  const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/studio-service`)
+  const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/studio-service?populate=*`)
   console.log(data)
+  // console.log('service', data.data.attributes.services)
+
+  let services = [];
 
   if (isLoading) {
     return <div className="App"><h1>Loading...</h1></div>
-  }
+  } 
 
   if (error) {
     return <div className="App"><h1>Error...</h1></div>
   }
 
-  return (
-    <>
-      <div className="App">
-        {/* <h1>{data.data.attributes.Intro}</h1>
-        <p>{data.data.attributes.Intro_Paragraph}</p>
-        <p>{data.data.attributes.Biography}</p>
-        <p>{data.data.attributes.Artist_Statement}</p> */}
-      </div>
-    </>
-  );
+  if (data) {
+    services = data.data.attributes.services.data;
+    console.log("services", services)
+    
+    return (
+      <>
+        <div className="fifty--fifty--container bg--red">
+          <div className="fifty--fifty--intro--text">          
+            <h1 className="page--intro">{data.data.attributes.Competition_Choreography}</h1>
+            <p>{data.data.attributes.Comp_Choreo_Description}</p>
+          </div>
+          <div className="flex jc--center ai--center">
+            <div className="intro--video">
+              <iframe src={data.data.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div className="body--container">
+          <h1 className="page--intro">services</h1>
+          <div className="services--list">
+            {services.map((service) => 
+              <div className="service--item flex">
+                <div className="bullet">
+                </div>
+                <div className="inside">
+                  <h2>{service.attributes.Service_Name}</h2>
+                  <div className="service--details">
+                    <h3>{service.attributes.Service_Description}</h3>
+                    <h3>{service.attributes.Price}</h3>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+          <h1 className="page--intro">let's make moves together!</h1>
+          <img className="red--triangle" src="../Images/Red_Triangle.png" />
+        </div>
+      </>
+    )
+  }
 
 }
 

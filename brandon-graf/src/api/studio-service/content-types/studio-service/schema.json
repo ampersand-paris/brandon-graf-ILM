@@ -22,6 +22,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::service.service"
+    },
+    "Video_Link": {
+      "type": "string"
     }
   }
 }

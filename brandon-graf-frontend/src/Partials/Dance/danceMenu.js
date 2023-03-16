@@ -17,10 +17,10 @@ const DanceMenu = () => {
                         <Link to="/dance/studio-services"><h3>studio services</h3></Link>
                     </div>
                     <div>
-                        <Link><h3>film</h3></Link>
+                        <Link to="/dance/film"><h3>film</h3></Link>
                     </div>
                     <div>
-                        <Link><h3>contact</h3></Link>
+                        <Link to="/dance/contact"><h3>contact</h3></Link>
                     </div>
                     <div>
                         {/* white box */}

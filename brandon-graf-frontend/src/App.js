@@ -14,6 +14,7 @@ import DanceApp from "./Partials/Dance/dance";
 import HealingApp from "./Partials/Healing/healing";
 import DanceFooter from "./Partials/Dance/danceFooter";
 import StudioServices from "./Dance/About/studioServices";
+import DanceContact from "./Dance/About/danceContact";
 
 function App() {
 
@@ -23,8 +24,10 @@ function App() {
         <Route path="/" element={<Landing />} />
         
         {/* <Route path="/dance" element={<DanceApp />} >  */}
+          <Route path="/dance" element={<><DanceMenu /> <About /> <DanceFooter /></>} />
           <Route path="/dance/about" element={<><DanceMenu /> <About /> <DanceFooter /></>} />
           <Route path="/dance/studio-services" element={<><DanceMenu /> <StudioServices /> <DanceFooter /></>} />
+          <Route path="/dance/contact" element={<><DanceMenu /> <DanceContact /> <DanceFooter /></>} />
         {/* </Route> */}
         <Route path="/healing" element={<HealingApp />} />
       </Routes>
