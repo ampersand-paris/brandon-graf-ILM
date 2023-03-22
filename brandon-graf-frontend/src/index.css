@@ -12,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
@@ -26,6 +27,7 @@ code {
   --red: #D2494C;
   --yellow: #F9D03C;
   --pea-shoot: #85C598;
+  --highlight: #6e78ff;
   --app-height: 100%;
   
 }
@@ -54,6 +56,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
+}
+
+a h2:hover{
+  color: var(--highlight)
+}
+
+a p:hover{
+  color: var(--highlight)
 }
 
 .underline {
@@ -344,8 +354,8 @@ a {
   padding: 50px 100px;
 }
 
-.intro--container{
-  min-height: 50vH;
+.intro--container {
+  min-height: 60vH;
   padding: 50px 100px;
 }
 
@@ -510,9 +520,8 @@ iframe {
 .red--circle {
   background-color: var(--red);
   border-radius: 200px;
-  height: 250px;
-  width: 250px;
-
+  height: 225px;
+  width: 225px;
   display: flex;
   justify-content: center;
 }
@@ -526,9 +535,25 @@ iframe {
 /* ====== REBOOK ====== */
 
 .rebook--width {
+  position: relative;
   width: 70%;
 }
 
+.pea--shoot--circle {
+  position: absolute;
+  background-color: var(--pea-shoot);
+  border-radius: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+}
+
+.healing--contact--info {
+  position: relative;
+  z-index: 10;
+}
 
 @media only screen and (max-width: 900px) {
 
@@ -563,6 +588,11 @@ iframe {
   .page--intro {
     width: 100%;
   }
+
+  .mobile--column {
+    flex-direction: column;
+  }
+
 
   /* ====== MENU ====== */
 
@@ -607,6 +637,12 @@ iframe {
     display: none;
   }
 
+  /* ====== BOOKING ====== */
+
+  .red--circle {
+    margin-top: 25px;
+  }
+
   /* ====== NEW CLIENT ====== */
 
   .steps--container {
@@ -626,6 +662,7 @@ iframe {
   .mobile-flex-row {
     flex-direction: row;
   }
+
   /* ====== GRID ====== */
 
   /* ====== FOOTER ====== */
@@ -681,7 +718,7 @@ iframe {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
-    min-height: 75vH;
+    min-height: 70vH;
   }
 
   .intro--text {
@@ -703,6 +740,8 @@ iframe {
 
   /* ====== HEALING ABOUT ====== */
 
-  
+  .rebook--width  {
+    width: auto;
+  }
 
 }
