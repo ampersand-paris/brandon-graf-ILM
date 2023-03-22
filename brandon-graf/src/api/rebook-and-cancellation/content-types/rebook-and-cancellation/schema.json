@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "rebook_and_cancellations",
+  "info": {
+    "singularName": "rebook-and-cancellation",
+    "pluralName": "rebook-and-cancellations",
+    "displayName": "Rebook and Cancellation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    }
+  }
+}

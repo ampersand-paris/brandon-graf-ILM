@@ -523,6 +523,13 @@ iframe {
   width: 50%;
 }
 
+/* ====== REBOOK ====== */
+
+.rebook--width {
+  width: 70%;
+}
+
+
 @media only screen and (max-width: 900px) {
 
   .headshot--healing--about {

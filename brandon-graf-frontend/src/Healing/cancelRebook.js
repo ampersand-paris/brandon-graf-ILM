@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Cancel_or_Rebook() {
 
-  const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/booking`)
+  const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/rebook-and-cancellation`)
     console.log(data)
 
   if (isLoading) {
@@ -20,15 +20,10 @@ function Cancel_or_Rebook() {
 
     return (
     <>
-      <div className="body--container intro--container flex ai--center jc--space--btwn">
-        <div className="red--circle flex ai--center jc--center">
-            <Link to={data.data.attributes.New_Client_Link}><h2>{data.data.attributes.New_Client}</h2></Link>
-        </div>
-        <div className="red--circle flex ai--center jc--center">
-            <Link to={data.data.attributes.Returning_Client_Link} target="_blank"><h2>{data.data.attributes.Returning_Client}</h2></Link>
-        </div>
-        <div className="red--circle flex ai--center jc--center">
-            <Link to={data.data.attributes.Cancel_or_Rebook_Link}><h2>{data.data.attributes.Cancel_or_Rebook}</h2></Link>
+      <div className="body--container intro--container ">
+        <div className="rebook--width">
+          <h1 className="page--intro">{data.data.attributes.Title}</h1>
+          <ReactMarkdown>{data.data.attributes.Body}</ReactMarkdown>
         </div>
       </div>
     </>
