@@ -18,7 +18,7 @@ function About() {
 
   return (
     <>
-      <div className="intro--container bg--lilac">
+      <div className="intro--container--grid bg--lilac">
         <div className=" flex column jc--center">
           <img className="headshot" src="../Images/Portraits/Brandon_Headshot.png" />
         </div>

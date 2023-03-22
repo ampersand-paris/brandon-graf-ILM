@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center;
 }
 
+.jc--space--btwn {
+  justify-content: space-between;
+}
+
 /* ====== GRID ====== */
 
 .grid--container {
@@ -317,10 +321,15 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 50px 100px;
 }
 
-.intro--container {
+.intro--container--grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100%;
+  min-height: 50vH;
+  padding: 50px 100px;
+}
+
+.intro--container{
   min-height: 50vH;
   padding: 50px 100px;
 }
@@ -424,7 +433,7 @@ iframe {
   border-color: var(--white);
 }
 
-/* ====== Healing About ====== */
+/* ====== HEALING ABOUT ====== */
 
 .purple--line {
   margin: 40px 0px;
@@ -453,6 +462,24 @@ iframe {
 .testimonial--button {
   width: 25px;
   cursor: pointer;
+}
+
+/* ====== BOOKING ====== */
+
+.red--circle {
+  background-color: var(--red);
+  border-radius: 200px;
+  height: 250px;
+  width: 250px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.red--circle a {
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
 }
 
 @media only screen and (max-width: 900px) {
