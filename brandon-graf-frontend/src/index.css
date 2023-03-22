@@ -82,6 +82,12 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-rows: 100%;
 }
 
+/* ====== TRANSFORMATIONS */
+
+.mirror--image {
+  transform: rotate(180deg);
+}
+
 /* ====== MENUS ====== */
 
 .menu--padding {
@@ -298,10 +304,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .body--text {
-  margin-top: 150px;
   padding: 50px 30px;
   min-width: 400px;
-  width: 60%;
+  width: 70%;
 }
 
 .fifty--fifty--container {
@@ -355,6 +360,12 @@ iframe {
 .red--triangle {
   height: 50px;
 }
+
+/* ====== ALIGNMENT ====== */
+
+.align--center {
+  text-align: center;
+}
 /* ====== DANCE ABOUT ====== */
 
 .headshot {
@@ -362,6 +373,9 @@ iframe {
   width: 100%;
 }
 
+.body--text--margin {
+  margin-top: 150px;
+}
 /* ====== STUDIO SERVICES ====== */
 
 .service--details h3 {
@@ -410,7 +424,43 @@ iframe {
   border-color: var(--white);
 }
 
+/* ====== Healing About ====== */
+
+.purple--line {
+  margin: 40px 0px;
+  height: 100%;
+  width: 5px;
+  background-color: var(--lilac);
+}
+
+.ilm--logo--healing--page {
+  width: 50%;
+}
+
+.headshot--healing--about {
+  width: 100%;
+  min-width: 200px;
+}
+
+.testimonial--container { 
+  min-height: 300px;
+}
+
+.testimonials { 
+  padding: 0px 20px;
+}
+
+.testimonial--button {
+  width: 25px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 900px) {
+
+  .headshot--healing--about {
+    width: 50%;
+    min-width: 200px;
+  }
 
   .intro--container {
     padding: 50px 30px;
@@ -421,8 +471,9 @@ iframe {
     flex-direction: column;
   }
 
-  .intro--video {
-    
+  .grid--container {
+    display: flex;
+    flex-direction: column;  
   }
 
   .intro--text {
@@ -474,6 +525,12 @@ iframe {
   .menu--rainbow div:nth-child(5) {
     width: 3%;
   }
+
+  /* ====== HEALING ABOUT ====== */
+
+  .purple--line {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -521,8 +578,11 @@ iframe {
   .body--text {
     min-width: 0px;
     width: auto;
-    margin-top: 0px;
     padding: 20px 0px;
+  }
+
+  .body--text--margin {
+    margin-top: 0px;
   }
 
   .body--container {
@@ -559,5 +619,9 @@ iframe {
   .headshot {
     width: auto;
   }
+
+  /* ====== HEALING ABOUT ====== */
+
   
+
 }

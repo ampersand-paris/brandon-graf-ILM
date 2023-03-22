@@ -15,6 +15,8 @@ import HealingApp from "./Partials/Healing/healing";
 import DanceFooter from "./Partials/Dance/danceFooter";
 import StudioServices from "./Dance/About/studioServices";
 import DanceContact from "./Dance/About/danceContact";
+import HealingAbout from "./Healing/About/about";
+import HealingFooter from "./Partials/Healing/healingFooter";
 
 function App() {
 
@@ -30,6 +32,7 @@ function App() {
           <Route path="/dance/contact" element={<><DanceMenu /> <DanceContact /> <DanceFooter /></>} />
         {/* </Route> */}
         <Route path="/healing" element={<HealingApp />} />
+        <Route path="/healing/about" element={<><HealingMenu /> <HealingAbout /> <HealingFooter /></>} />
       </Routes>
     </Router>
   );

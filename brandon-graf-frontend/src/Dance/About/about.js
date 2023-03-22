@@ -32,13 +32,13 @@ function About() {
           <div>
             <img className="about--header" src="../Images/Headings/Biography.png" />
           </div>
-          <p className="body--text"><ReactMarkdown>{data.data.attributes.Biography}</ReactMarkdown></p>
+          <p className="body--text body--text--margin"><ReactMarkdown>{data.data.attributes.Biography}</ReactMarkdown></p>
         </div>
         <div className="grid--container">
           <div>
             <img className="about--header" src="../Images/Headings/Artist_Statement.png" />
           </div>
-          <p className="body--text"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
+          <p className="body--text body--text--margin"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
         </div>
       </div>
     </>
