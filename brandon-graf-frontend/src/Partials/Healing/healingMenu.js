@@ -6,7 +6,7 @@ const HealingMenu = () => {
     return (
         <>
             <div className="menu--padding">
-                <a href="/"><img className="menu--logo" src="../Images/Logo.png" alt="brand logo: a circle made of curvivng lines and Brandon Graf"/></a>
+                <a href="/"><img className="menu--logo" src="/Images/Logo.png" alt="brand logo: a circle made of curvivng lines and Brandon Graf"/></a>
                 <div className="menu--rainbow flex">
                     <div>
                         <Link to="/healing/about"><h3>about</h3></Link>

@@ -16,10 +16,10 @@ const HealingFooter = () => {
             <div className="footer--container healing--footer">
                 <div className="footer--grid">
                     <div className="flex column">
-                        <img className="footer--logo" src="../Images/ilm_logo.png" alt="ilan lev movement logo: i l m"/>
+                        <img className="footer--logo" src="/Images/ilm_logo.png" alt="ilan lev movement logo: i l m"/>
                         <div className="flex">
-                            <a href="https://www.instagram.com/brandongraf_movement/?hl=en" target="_blank"><img className="social--icon" src="../Images/instagram_icon_lilac.png" alt="Instagram logo"/></a>
-                            <a href="" target="_blank"><img className="social--icon" src="../Images/facebook_icon.png" alt="Instagram logo"/></a>
+                            <a href="https://www.instagram.com/brandongraf_movement/?hl=en" target="_blank"><img className="social--icon" src="/Images/instagram_icon_lilac.png" alt="Instagram logo"/></a>
+                            <a href="" target="_blank"><img className="social--icon" src="/Images/facebook_icon.png" alt="Instagram logo"/></a>
                         </div>    
                         <p>contact me:
                             <br></br>

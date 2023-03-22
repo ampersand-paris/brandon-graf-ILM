@@ -36,9 +36,9 @@ function App() {
         {/* </Route> */}
         <Route path="/healing" element={<HealingApp />} />
         <Route path="/healing/about" element={<><HealingMenu /> <HealingAbout /> <HealingFooter /></>} />
-        <Route path="/healing/booking/new-client" element={<><HealingMenu /> <Booking /> <HealingFooter /></>} />
-        <Route path="/healing/booking/cancel-or-rebook" element={<><HealingMenu /> <NewClient /> <HealingFooter /></>} />
-        <Route path="/healing/booking" element={<><HealingMenu /> <Cancel_or_Rebook /> <HealingFooter /></>} />
+        <Route path="/healing/booking/new-client" element={<><HealingMenu /> <NewClient /> <HealingFooter /></>} />
+        <Route path="/healing/booking/cancel-or-rebook" element={<><HealingMenu /> <Cancel_or_Rebook /> <HealingFooter /></>} />
+        <Route path="/healing/booking" element={<><HealingMenu /> <Booking /> <HealingFooter /></>} />
       </Routes>
     </Router>
   );

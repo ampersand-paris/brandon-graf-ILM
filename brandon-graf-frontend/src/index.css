@@ -52,6 +52,21 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  text-decoration-thickness: 2px;
+}
+
+.underline:hover {
+  color: var(--lilac);
+  text-decoration-color: var(--lilac);
+}
+
 /* ======= FLEXBOX ====== */ 
 
 .flex {
@@ -370,6 +385,32 @@ iframe {
   height: 50px;
 }
 
+.steps--container {
+  margin-top: 30px;
+  position: relative;
+  width: 50%;
+}
+
+.steps--triangle {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.step--information {
+  position: relative;
+  z-index: 10;
+  margin-left: 30px;
+}
+
+.step--information h1 {
+  margin: 20px 0px;
+}
+
+.step--information p {
+    margin-left: 10px;
+}
+
 /* ====== ALIGNMENT ====== */
 
 .align--center {
@@ -557,6 +598,12 @@ iframe {
 
   .purple--line {
     display: none;
+  }
+
+  /* ====== NEW CLIENT ====== */
+
+  .steps--container {
+    width: 75%;
   }
 }
 
