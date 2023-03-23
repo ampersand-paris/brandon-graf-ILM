@@ -4,7 +4,7 @@
   "info": {
     "singularName": "healing-about",
     "pluralName": "healing-abouts",
-    "displayName": "Healing About",
+    "displayName": "Healing_About",
     "description": ""
   },
   "options": {
@@ -28,6 +28,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::testimonial.testimonial"
+    },
+    "Video_Link": {
+      "type": "string"
     }
   }
 }

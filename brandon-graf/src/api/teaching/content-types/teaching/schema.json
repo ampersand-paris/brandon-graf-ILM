@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "teachings",
+  "info": {
+    "singularName": "teaching",
+    "pluralName": "teachings",
+    "displayName": "Teaching",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "richtext"
+    },
+    "Outro": {
+      "type": "string"
+    },
+    "curricula": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::curriculum.curriculum"
+    },
+    "formats": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::format.format"
+    },
+    "Video_Link": {
+      "type": "string"
+    }
+  }
+}

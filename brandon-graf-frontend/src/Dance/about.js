@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import useFetch from "../../useFetch";
-import DanceMenu from "../../Partials/Dance/danceMenu";
+import useFetch from "../useFetch";
 import ReactMarkdown from 'react-markdown'
 
 function About() {
@@ -18,7 +17,7 @@ function About() {
 
   return (
     <>
-      <div className="intro--container bg--lilac">
+      <div className="intro--container--grid bg--lilac">
         <div className=" flex column jc--center">
           <img className="headshot" src="../Images/Portraits/Brandon_Headshot.png" />
         </div>
@@ -32,13 +31,13 @@ function About() {
           <div>
             <img className="about--header" src="../Images/Headings/Biography.png" />
           </div>
-          <p className="body--text"><ReactMarkdown>{data.data.attributes.Biography}</ReactMarkdown></p>
+          <p className="body--text body--text--margin"><ReactMarkdown>{data.data.attributes.Biography}</ReactMarkdown></p>
         </div>
         <div className="grid--container">
           <div>
             <img className="about--header" src="../Images/Headings/Artist_Statement.png" />
           </div>
-          <p className="body--text"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
+          <p className="body--text body--text--margin"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
         </div>
       </div>
     </>

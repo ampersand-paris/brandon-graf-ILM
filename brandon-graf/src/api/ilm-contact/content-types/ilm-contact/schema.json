@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "ilm_contacts",
+  "info": {
+    "singularName": "ilm-contact",
+    "pluralName": "ilm-contacts",
+    "displayName": "ILM Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Facebook_Link": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Email_Link": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Instagram_Link": {
+      "type": "string"
+    }
+  }
+}

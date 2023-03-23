@@ -6,7 +6,7 @@ import { BrowserRouter as Router,
 // ====== COMPONENTS ======
 import DanceMenu from './danceMenu';
 import DanceFooter from "./danceFooter";
-import About from "../../Dance/About/about";
+import About from "../../Dance/about";
 
 function DanceApp() {
 

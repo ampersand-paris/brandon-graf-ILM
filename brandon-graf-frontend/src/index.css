@@ -12,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
@@ -26,6 +27,7 @@ code {
   --red: #D2494C;
   --yellow: #F9D03C;
   --pea-shoot: #85C598;
+  --highlight: #6e78ff;
   --app-height: 100%;
   
 }
@@ -44,12 +46,54 @@ code {
   background-color: var(--red);
 }
 
+.bg--yellow {
+  background-color: var(--yellow);
+}
+
+.bg--yellow h1 {
+  color: black;
+}
+
+.bg--yellow h2 {
+  color: black;
+}
+
+.bg--yellow h3 {
+  color: black;
+}
+
+.bg--yellow p {
+  color: black;
+}
 
 /* ======= FONTS ====== */ 
 
 h1, h2, h3, h4, h5, h6, p {
   color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a h2:hover{
+  color: var(--highlight)
+}
+
+a p:hover{
+  color: var(--highlight)
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  text-decoration-thickness: 2px;
+}
+
+.underline:hover {
+  color: var(--lilac);
+  text-decoration-color: var(--lilac);
 }
 
 /* ======= FLEXBOX ====== */ 
@@ -74,12 +118,22 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center;
 }
 
+.jc--space--btwn {
+  justify-content: space-between;
+}
+
 /* ====== GRID ====== */
 
 .grid--container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100%;
+}
+
+/* ====== TRANSFORMATIONS */
+
+.mirror--image {
+  transform: rotate(180deg);
 }
 
 /* ====== MENUS ====== */
@@ -298,10 +352,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .body--text {
-  margin-top: 150px;
   padding: 50px 30px;
   min-width: 400px;
-  width: 60%;
+  width: 70%;
 }
 
 .fifty--fifty--container {
@@ -312,11 +365,16 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 50px 100px;
 }
 
-.intro--container {
+.intro--container--grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100%;
   min-height: 50vH;
+  padding: 50px 100px;
+}
+
+.intro--container {
+  min-height: 60vH;
   padding: 50px 100px;
 }
 
@@ -337,6 +395,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 56.25%;
 }
 
+.film--video {
+  position: relative;
+  padding-bottom: 0px;
+
+}
+
 iframe {
   position: absolute;
   top: 0;
@@ -355,6 +419,38 @@ iframe {
 .red--triangle {
   height: 50px;
 }
+
+.steps--container {
+  margin-top: 30px;
+  position: relative;
+  width: 50%;
+}
+
+.steps--triangle {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.step--information {
+  position: relative;
+  z-index: 10;
+  margin-left: 30px;
+}
+
+.step--information h1 {
+  margin: 20px 0px;
+}
+
+.step--information p {
+    margin-left: 10px;
+}
+
+/* ====== ALIGNMENT ====== */
+
+.align--center {
+  text-align: center;
+}
 /* ====== DANCE ABOUT ====== */
 
 .headshot {
@@ -362,6 +458,9 @@ iframe {
   width: 100%;
 }
 
+.body--text--margin {
+  margin-top: 150px;
+}
 /* ====== STUDIO SERVICES ====== */
 
 .service--details h3 {
@@ -373,7 +472,7 @@ iframe {
   border-style: solid;
   border-radius: 20px;
   height: 15px;
-  width: 15px
+  width: 15px;
 }
 
 .services--list h2 {
@@ -387,7 +486,7 @@ iframe {
 }
 
 .inside {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .services--list div:nth-child(n) .bullet {
@@ -410,7 +509,144 @@ iframe {
   border-color: var(--white);
 }
 
+/* ====== HEALING ABOUT ====== */
+
+.purple--line {
+  margin: 40px 0px;
+  height: 100%;
+  width: 5px;
+  background-color: var(--lilac);
+}
+
+.ilm--logo--healing--page {
+  width: 50%;
+}
+
+.headshot--healing--about {
+  width: 100%;
+  min-width: 200px;
+}
+
+.testimonial--container { 
+  min-height: 300px;
+}
+
+.testimonials { 
+  padding: 0px 20px;
+}
+
+.testimonial--button {
+  width: 25px;
+  cursor: pointer;
+}
+
+/* ====== BOOKING ====== */
+
+.red--circle {
+  background-color: var(--red);
+  border-radius: 200px;
+  height: 225px;
+  width: 225px;
+  display: flex;
+  justify-content: center;
+}
+
+.red--circle a {
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+}
+
+/* ====== REBOOK ====== */
+
+.rebook--width {
+  position: relative;
+  width: 70%;
+}
+
+.pea--shoot--circle {
+  position: absolute;
+  background-color: var(--pea-shoot);
+  border-radius: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+}
+
+.healing--contact--info {
+  position: relative;
+  z-index: 10;
+}
+
+/* ====== FAQ ====== */
+
+.faq--list {
+  width: 70%
+}
+
+.faq--list:nth-child(1) {
+  margin-top: 0px;
+}
+
+.faq--title {
+  margin: auto 0px 0px 10px;
+}
+
+.faq--list p {
+  margin: 10px auto 0px 50px;
+}
+
+.faq--list .bullet {
+  border-color: var(--yellow);
+}
+
+.faq--item {
+  margin-top: 30px;
+}
+
+.yellow--triangle {
+  width: 50px;
+  transform: rotate(90deg);
+}
+
+.faq--intro {
+  margin-top: 0px;
+}
+
+
+/* ====== TEACHING ====== */
+
+.formats--triangle {
+  transform: rotate(180deg);
+}
+
+.shape {
+  width: 40px;
+  height: 40px;
+}
+
+.curriculum--list div:nth-child(n) .shape {
+  background-color: var(--yellow);
+}
+
+.curriculum--list div:nth-child(2n) .shape {
+  border-radius: 40px;
+  background-color: var(--pea-shoot);
+}
+
+.curriculum--list p {
+  margin-left: 70px
+}
+
+
 @media only screen and (max-width: 900px) {
+
+  .headshot--healing--about {
+    width: 50%;
+    min-width: 200px;
+  }
 
   .intro--container {
     padding: 50px 30px;
@@ -421,8 +657,9 @@ iframe {
     flex-direction: column;
   }
 
-  .intro--video {
-    
+  .grid--container {
+    display: flex;
+    flex-direction: column;  
   }
 
   .intro--text {
@@ -437,6 +674,11 @@ iframe {
   .page--intro {
     width: 100%;
   }
+
+  .mobile--column {
+    flex-direction: column;
+  }
+
 
   /* ====== MENU ====== */
 
@@ -474,6 +716,30 @@ iframe {
   .menu--rainbow div:nth-child(5) {
     width: 3%;
   }
+
+  /* ====== HEALING ABOUT ====== */
+
+  .purple--line {
+    display: none;
+  }
+
+  /* ====== BOOKING ====== */
+
+  .red--circle {
+    margin-top: 25px;
+  }
+
+  /* ====== NEW CLIENT ====== */
+
+  .steps--container {
+    width: 75%;
+  }
+
+  /* ====== FAQ ====== */
+
+  .faq--list {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -488,6 +754,7 @@ iframe {
   .mobile-flex-row {
     flex-direction: row;
   }
+
   /* ====== GRID ====== */
 
   /* ====== FOOTER ====== */
@@ -521,8 +788,11 @@ iframe {
   .body--text {
     min-width: 0px;
     width: auto;
-    margin-top: 0px;
     padding: 20px 0px;
+  }
+
+  .body--text--margin {
+    margin-top: 0px;
   }
 
   .body--container {
@@ -540,7 +810,7 @@ iframe {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
-    min-height: 75vH;
+    min-height: 70vH;
   }
 
   .intro--text {
@@ -559,5 +829,11 @@ iframe {
   .headshot {
     width: auto;
   }
-  
+
+  /* ====== HEALING ABOUT ====== */
+
+  .rebook--width  {
+    width: auto;
+  }
+
 }
