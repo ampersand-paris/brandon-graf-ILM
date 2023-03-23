@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import useFetch from "../../useFetch";
-import DanceMenu from "../../Partials/Dance/danceMenu";
+import useFetch from "../useFetch";
 import ReactMarkdown from 'react-markdown'
 
 function About() {

@@ -7,14 +7,14 @@ import appHeight from "./appHeight" // Needs to be imported to work
 
 // ====== COMPONENTS ======
 import Landing from "./Landing";
-import About from './Dance/About/about';
+import About from './Dance/about';
 import DanceMenu from './Partials/Dance/danceMenu';
 import HealingMenu from "./Partials/Healing/healingMenu";
 import DanceApp from "./Partials/Dance/dance";
 import HealingApp from "./Partials/Healing/healing";
 import DanceFooter from "./Partials/Dance/danceFooter";
-import StudioServices from "./Dance/About/studioServices";
-import DanceContact from "./Dance/About/danceContact";
+import StudioServices from "./Dance/studioServices";
+import DanceContact from "./Dance/danceContact";
 import HealingAbout from "./Healing/about";
 import Booking from "./Healing/booking";
 import HealingFooter from "./Partials/Healing/healingFooter";
@@ -23,6 +23,7 @@ import Cancel_or_Rebook from "./Healing/cancelRebook";
 import ILMContact from "./Healing/contact";
 import FAQ from "./Healing/faq";
 import Teaching from "./Dance/teaching";
+import Film from "./Dance/film";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/dance/about" element={<><DanceMenu /> <About /> <DanceFooter /></>} />
           <Route path="/dance/studio-services" element={<><DanceMenu /> <StudioServices /> <DanceFooter /></>} />
           <Route path="/dance/teaching" element={<><DanceMenu /> <Teaching /> <DanceFooter /></>} />
+          <Route path="/dance/film" element={<><DanceMenu /> <Film /> <DanceFooter /></>} />
           <Route path="/dance/contact" element={<><DanceMenu /> <DanceContact /> <DanceFooter /></>} />
         {/* </Route> */}
         <Route path="/healing" element={<HealingApp />} />

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "teaching",
     "pluralName": "teachings",
-    "displayName": "Teaching"
+    "displayName": "Teaching",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -29,6 +30,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::format.format"
+    },
+    "Video_Link": {
+      "type": "string"
     }
   }
 }

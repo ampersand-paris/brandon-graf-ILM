@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "film_pages",
+  "info": {
+    "singularName": "film-page",
+    "pluralName": "film-pages",
+    "displayName": "Film Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "richtext"
+    },
+    "Video_Link": {
+      "type": "string"
+    },
+    "Image_Link": {
+      "type": "string"
+    },
+    "films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::film.film"
+    }
+  }
+}

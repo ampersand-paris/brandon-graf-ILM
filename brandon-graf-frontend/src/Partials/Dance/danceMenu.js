@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
-import About from "../../Dance/About/about";
+import About from "../../Dance/about";
 import DanceFooter from "./danceFooter";
 
 const DanceMenu = () => {
