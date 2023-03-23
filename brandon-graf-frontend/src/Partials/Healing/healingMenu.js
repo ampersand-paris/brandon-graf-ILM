@@ -15,7 +15,7 @@ const HealingMenu = () => {
                         <Link to="/healing/booking"><h3>booking</h3></Link>
                     </div>
                     <div>
-                        <Link to="/healing/faq"><h3>faq</h3></Link>
+                        <Link to="/healing/FAQ"><h3>faq</h3></Link>
                     </div>
                     <div>
                         <Link to="/healing/contact"><h3>contact</h3></Link>

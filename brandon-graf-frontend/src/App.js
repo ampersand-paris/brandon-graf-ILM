@@ -21,6 +21,7 @@ import HealingFooter from "./Partials/Healing/healingFooter";
 import NewClient from "./Healing/newClient";
 import Cancel_or_Rebook from "./Healing/cancelRebook";
 import ILMContact from "./Healing/contact";
+import FAQ from "./Healing/faq";
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/healing/booking/cancel-or-rebook" element={<><HealingMenu /> <Cancel_or_Rebook /> <HealingFooter /></>} />
         <Route path="/healing/booking" element={<><HealingMenu /> <Booking /> <HealingFooter /></>} />
         <Route path="/healing/contact" element={<><HealingMenu /> <ILMContact /> <HealingFooter /></>} />
+        <Route path="/healing/FAQ" element={<><HealingMenu /> <FAQ /> <HealingFooter /></>} />
       </Routes>
     </Router>
   );

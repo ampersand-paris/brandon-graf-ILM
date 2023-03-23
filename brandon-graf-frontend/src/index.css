@@ -447,7 +447,7 @@ iframe {
   border-style: solid;
   border-radius: 20px;
   height: 15px;
-  width: 15px
+  width: 15px;
 }
 
 .services--list h2 {
@@ -555,6 +555,41 @@ iframe {
   z-index: 10;
 }
 
+/* ====== FAQ ====== */
+
+.faq--list {
+  width: 70%
+}
+
+.faq--list:nth-child(1) {
+  margin-top: 0px;
+}
+
+.faq--title {
+  margin: auto 0px 0px 10px;
+}
+
+.faq--list p {
+  margin: 10px auto 0px 50px;
+}
+
+.faq--list .bullet {
+  border-color: var(--yellow);
+}
+
+.faq--item {
+  margin-top: 30px;
+}
+
+.yellow--triangle {
+  width: 50px;
+  transform: rotate(90deg);
+}
+
+.faq--intro {
+  margin-top: 0px;
+}
+
 @media only screen and (max-width: 900px) {
 
   .headshot--healing--about {
@@ -647,6 +682,12 @@ iframe {
 
   .steps--container {
     width: 75%;
+  }
+
+  /* ====== FAQ ====== */
+
+  .faq--list {
+    width: 100%;
   }
 }
 
