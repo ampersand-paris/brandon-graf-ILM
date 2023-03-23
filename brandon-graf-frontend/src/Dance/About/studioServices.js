@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import useFetch from "../../useFetch";
-import DanceMenu from "../../Partials/Dance/danceMenu";
 
 function StudioServices() {
 

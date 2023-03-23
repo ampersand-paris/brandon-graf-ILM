@@ -461,7 +461,7 @@ iframe {
 }
 
 .inside {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .services--list div:nth-child(n) .bullet {
@@ -589,6 +589,32 @@ iframe {
 .faq--intro {
   margin-top: 0px;
 }
+
+
+/* ====== TEACHING ====== */
+
+.formats--triangle {
+  transform: rotate(180deg);
+}
+
+.shape {
+  width: 40px;
+  height: 40px;
+}
+
+.curriculum--list div:nth-child(n) .shape {
+  background-color: var(--yellow);
+}
+
+.curriculum--list div:nth-child(2n) .shape {
+  border-radius: 40px;
+  background-color: var(--pea-shoot);
+}
+
+.curriculum--list p {
+  margin-left: 70px
+}
+
 
 @media only screen and (max-width: 900px) {
 

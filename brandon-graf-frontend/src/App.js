@@ -22,6 +22,7 @@ import NewClient from "./Healing/newClient";
 import Cancel_or_Rebook from "./Healing/cancelRebook";
 import ILMContact from "./Healing/contact";
 import FAQ from "./Healing/faq";
+import Teaching from "./Dance/teaching";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/dance" element={<><DanceMenu /> <About /> <DanceFooter /></>} />
           <Route path="/dance/about" element={<><DanceMenu /> <About /> <DanceFooter /></>} />
           <Route path="/dance/studio-services" element={<><DanceMenu /> <StudioServices /> <DanceFooter /></>} />
+          <Route path="/dance/teaching" element={<><DanceMenu /> <Teaching /> <DanceFooter /></>} />
           <Route path="/dance/contact" element={<><DanceMenu /> <DanceContact /> <DanceFooter /></>} />
         {/* </Route> */}
         <Route path="/healing" element={<HealingApp />} />
