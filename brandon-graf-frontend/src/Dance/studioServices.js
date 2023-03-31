@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import { Link } from "react-router-dom"
+import Loading from "../Partials/loading";
+
 function StudioServices() {
 
   const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/studio-service?populate=*`)
@@ -10,7 +12,7 @@ function StudioServices() {
   let services = [];
 
   if (isLoading) {
-    return <div className="App"><h1>Loading...</h1></div>
+    return <Loading />
   } 
 
   if (error) {

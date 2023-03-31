@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import reactMarkdown from "react-markdown";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import Loading from "../Partials/loading";
 
 function Film() {
 
@@ -12,7 +13,7 @@ function Film() {
   let films = [];
 
   if (isLoading) {
-    return <div className="intro--container flex ai--center jc--center"><h1>Loading...</h1></div>
+    return <Loading />
   } 
 
   if (error) {
