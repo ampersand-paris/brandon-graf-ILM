@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import ReactMarkdown from 'react-markdown'
 import { Link } from 'react-router-dom'
+import Loading from "../Partials/loading";
 
 function NewClient() {
 
@@ -11,7 +12,7 @@ function NewClient() {
   let steps = [];
 
   if (isLoading) {
-    return <div className="App"><h1>Loading...</h1></div>
+    return <Loading />
   }
 
   if (error) {

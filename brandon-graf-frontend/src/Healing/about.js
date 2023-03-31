@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import ReactMarkdown from 'react-markdown'
+import Loading from "../Partials/loading";
 
 function HealingAbout() {
 
@@ -35,7 +36,7 @@ function HealingAbout() {
   }
 
   if (isLoading) {
-    return <div className="App"><h1>Loading...</h1></div>
+    return <Loading />
   }
 
   if (error) {

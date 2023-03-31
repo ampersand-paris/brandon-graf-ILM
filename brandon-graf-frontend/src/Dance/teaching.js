@@ -3,6 +3,7 @@ import useFetch from "../useFetch";
 import reactMarkdown from "react-markdown";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Link } from "react-router-dom";
+import Loading from "../Partials/loading";
 
 function Teaching() {
 
@@ -14,7 +15,7 @@ function Teaching() {
   let formats = []
 
   if (isLoading) {
-    return <div className="intro--container flex ai--center jc--center"><h1>Loading...</h1></div>
+    return <Loading />
   } 
 
   if (error) {

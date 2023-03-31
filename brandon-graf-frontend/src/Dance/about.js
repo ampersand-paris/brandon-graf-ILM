@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import ReactMarkdown from 'react-markdown'
+import Loading from "../Partials/loading";
 
 function About() {
 
@@ -8,7 +9,7 @@ function About() {
   console.log(data)
 
   if (isLoading) {
-    return <div className="App"><h1>Loading...</h1></div>
+    return <Loading />
   }
 
   if (error) {
@@ -39,10 +40,12 @@ function About() {
           </div>
           <div className="body--text">
             <p className="body--text--margin"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
-            <div className="intro--video">
-              <iframe src={data.data.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
           </div>
+        </div>
+      </div>
+      <div className="flex">
+        <div className="intro--video">
+          <iframe src={data.data.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </>
