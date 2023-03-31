@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import reactMarkdown from "react-markdown";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import { Link } from "react-router-dom";
 
 function Teaching() {
 
@@ -26,6 +27,14 @@ function Teaching() {
     
     return (
       <>
+        <div className="submenu bg--red">
+          <div>
+            <Link to="/dance/studio-services"><h3>competition choreography</h3></Link>
+          </div>
+          <div>
+            <Link to="/dance/teaching"><h3>teaching</h3></Link>
+          </div>
+        </div>
         <div className="fifty--fifty--container bg--red">
           <div className="fifty--fifty--intro--text">          
             <h1 className="page--intro">{data.data.attributes.Title}</h1>

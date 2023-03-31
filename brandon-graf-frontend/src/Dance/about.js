@@ -18,7 +18,7 @@ function About() {
   return (
     <>
       <div className="intro--container--grid bg--lilac">
-        <div className=" flex column jc--center">
+        <div className="flex column jc--center ai--center">
           <img className="headshot" src="../Images/Portraits/Brandon_Headshot.png" />
         </div>
         <div className="intro--text">          
@@ -37,7 +37,12 @@ function About() {
           <div>
             <img className="about--header" src="../Images/Headings/Artist_Statement.png" />
           </div>
-          <p className="body--text body--text--margin"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
+          <div className="body--text">
+            <p className="body--text--margin"><ReactMarkdown>{data.data.attributes.Artist_Statement}</ReactMarkdown></p>
+            <div className="intro--video">
+              <iframe src={data.data.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </>
