@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
-
+import { Link } from "react-router-dom"
 function StudioServices() {
 
   const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/studio-service?populate=*`)
@@ -23,6 +23,14 @@ function StudioServices() {
     
     return (
       <>
+        <div className="submenu bg--red">
+          <div>
+            <Link to="/dance/studio-services"><h3>competition choreography</h3></Link>
+          </div>
+          <div>
+            <Link to="/dance/teaching"><h3>teaching</h3></Link>
+          </div>
+        </div>
         <div className="fifty--fifty--container bg--red">
           <div className="fifty--fifty--intro--text">          
             <h1 className="page--intro">{data.data.attributes.Competition_Choreography}</h1>

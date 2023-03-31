@@ -26,6 +26,9 @@
     },
     "Artist_Statement": {
       "type": "richtext"
+    },
+    "Video_Link": {
+      "type": "string"
     }
   }
 }

@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
+  color: var(--pea-shoot);
   text-decoration: none;
 }
 
@@ -94,6 +95,36 @@ a p:hover{
 .underline:hover {
   color: var(--lilac);
   text-decoration-color: var(--lilac);
+}
+
+.white--text {
+  color: white;
+}
+
+.lilac--text {
+  color: var(--lilac);
+}
+
+/* ======= FLEXBOX ====== */ 
+
+.submenu {
+  display: flex;
+  width: 60vW;
+}
+
+.submenu div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.submenu h3 {
+  margin: 5px;
+}
+
+.submenu div:hover {
+  background-color: var(--highlight) !important;
+  transition-duration: .5s;
 }
 
 /* ======= FLEXBOX ====== */ 
@@ -122,6 +153,10 @@ a p:hover{
   justify-content: space-between;
 }
 
+.jc--space--around {
+  justify-content: space-between;
+}
+
 /* ====== GRID ====== */
 
 .grid--container {
@@ -129,6 +164,7 @@ a p:hover{
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100%;
 }
+
 
 /* ====== TRANSFORMATIONS */
 
@@ -155,7 +191,14 @@ a p:hover{
 }
 
 .menu--rainbow h3 {
+  display: block;
+  width: 100%;
   margin: 0;
+}
+
+.menu--rainbow div:hover {
+  background-color: var(--highlight) !important;
+  transition-duration: .5s;
 }
 
 .menu--rainbow div {
@@ -401,6 +444,14 @@ a p:hover{
 
 }
 
+.margin-left {
+  margin-left: 20px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
 iframe {
   position: absolute;
   top: 0;
@@ -432,6 +483,10 @@ iframe {
   transform: rotate(180deg);
 }
 
+.movies--triangle {
+  transform: rotate(90deg);
+}
+
 .step--information {
   position: relative;
   z-index: 10;
@@ -459,7 +514,7 @@ iframe {
 }
 
 .body--text--margin {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 /* ====== STUDIO SERVICES ====== */
 
@@ -806,7 +861,7 @@ iframe {
     min-height: 73vH;
   }
 
-  .intro--container {
+  .intro--container--grid {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
@@ -836,4 +891,12 @@ iframe {
     width: auto;
   }
 
+  /* ====== HEALING CONTACT ====== */
+
+  .pea--shoot--circle {
+    margin-left: -15px;
+    margin-top: -20px;
+    height: 50px;
+    width: 50px;
+  }
 }
