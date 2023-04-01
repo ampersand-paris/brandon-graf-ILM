@@ -34,13 +34,19 @@ function Film() {
             {/* <img src={data.data.attributes.Image_Link} /> */}
           </div>
         </div>
-        <div className="flex">
+        {/* Uncomment to show reel */}
+        {/* <div className="flex">
           <div className="intro--video">
             <iframe className="film-video" src={data.data.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
-        </div>
+        </div> */}
         {films.map((film) =>   
           <>
+            <div className="flex">
+              <div className="intro--video">
+                <iframe src={film.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
             <div className="fifty--fifty--container bg--yellow">
               <div className="fifty--fifty--intro--text">          
                 <h1 className="page--intro">{film.attributes.Title}</h1>
@@ -48,11 +54,6 @@ function Film() {
               </div>
               <div className="flex jc--center ai--center">
 
-              </div>
-            </div>
-            <div className="flex">
-              <div className="intro--video">
-                <iframe src={film.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
           </>
