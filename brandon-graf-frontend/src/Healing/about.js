@@ -68,7 +68,7 @@ function HealingAbout() {
             </div>
             <div className="body--text">
                 <h1 className="page--intro">{data.data.attributes.ILM_Header}</h1>
-                <p><ReactMarkdown>{data.data.attributes.ILM_Body}</ReactMarkdown></p>
+                <p><ReactMarkdown linkTarget="_blank">{data.data.attributes.ILM_Body}</ReactMarkdown></p>
                 <div className="intro--video">
                     <iframe src={data.data.attributes.Video_Link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
