@@ -21,7 +21,7 @@ function Booking() {
 
     return (
     <>
-      <div className="body--container intro--container flex ai--center jc--space--btwn mobile=--column">
+      <div className="body--container intro--container flex ai--center jc--space--btwn mobile--column">
         <div className="red--circle flex ai--center jc--center">
             <Link to={data.data.attributes.New_Client_Link}><h2>{data.data.attributes.New_Client}</h2></Link>
         </div>

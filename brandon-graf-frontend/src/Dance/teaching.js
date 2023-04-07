@@ -32,7 +32,7 @@ function Teaching() {
           <div>
             <Link to="/dance/studio-services"><h3>competition choreography</h3></Link>
           </div>
-          <div>
+          <div className="flex ai--center">
             <Link to="/dance/teaching"><h3>teaching</h3></Link>
           </div>
         </div>
