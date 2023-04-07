@@ -46,6 +46,11 @@ code {
   background-color: var(--red);
 }
 
+.bg--red--opaque {
+  background-color: var(--red);
+  opacity: 85%;
+}
+
 .bg--yellow {
   background-color: var(--yellow);
 }

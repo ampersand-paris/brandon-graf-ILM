@@ -28,11 +28,11 @@ function Teaching() {
     
     return (
       <>
-        <div className="submenu bg--red">
-          <div>
+        <div className="submenu">
+          <div className="bg--red--opaque">
             <Link to="/dance/studio-services"><h3>competition choreography</h3></Link>
           </div>
-          <div className="flex ai--center">
+          <div className="flex ai--center bg--red">
             <Link to="/dance/teaching"><h3>teaching</h3></Link>
           </div>
         </div>
