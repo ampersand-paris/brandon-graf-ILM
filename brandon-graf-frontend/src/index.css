@@ -78,23 +78,10 @@ a {
   text-decoration: none;
 }
 
-a h2:hover{
-  color: var(--highlight)
-}
-
-a p:hover{
-  color: var(--highlight)
-}
-
 .underline {
   text-decoration: underline;
   text-decoration-color: var(--white);
   text-decoration-thickness: 2px;
-}
-
-.underline:hover {
-  color: var(--lilac);
-  text-decoration-color: var(--lilac);
 }
 
 .white--text {
@@ -120,11 +107,6 @@ a p:hover{
 
 .submenu h3 {
   margin: 5px;
-}
-
-.submenu div:hover {
-  background-color: var(--highlight) !important;
-  transition-duration: .5s;
 }
 
 /* ======= FLEXBOX ====== */ 
@@ -194,11 +176,6 @@ a p:hover{
   display: block;
   width: 100%;
   margin: 0;
-}
-
-.menu--rainbow div:hover {
-  background-color: var(--highlight) !important;
-  transition-duration: .5s;
 }
 
 .menu--rainbow div {
@@ -772,6 +749,12 @@ iframe {
     width: 3%;
   }
 
+  .submenu {
+    display: flex;
+    width: 100vW;
+    text-align: center;
+  }
+
   /* ====== HEALING ABOUT ====== */
 
   .purple--line {
@@ -796,6 +779,48 @@ iframe {
     width: 100%;
   }
 }
+
+
+@media (hover: hover) {
+  a h2:hover{
+    color: var(--highlight)
+  }
+  
+  a p:hover{
+    color: var(--highlight)
+  }
+
+  .underline:hover {
+    color: var(--lilac);
+    text-decoration-color: var(--lilac);
+  }
+
+  .submenu div:hover {
+    background-color: var(--highlight) !important;
+    transition-duration: .5s;
+  }
+
+  .menu--rainbow div:nth-child(1):hover {
+    background-color: var(--highlight) ;
+    transition-duration: .5s;
+  }
+  
+  .menu--rainbow div:nth-child(2):hover {
+    background-color: var(--highlight) ;
+    transition-duration: .5s;
+  }
+  
+  .menu--rainbow div:nth-child(3):hover {
+    background-color: var(--highlight) ;
+    transition-duration: .5s;
+  }
+  
+  .menu--rainbow div:nth-child(4):hover {
+    background-color: var(--highlight) ;
+    transition-duration: .5s;
+  }
+}
+
 
 @media only screen and (max-width: 650px) {
 
