@@ -104,6 +104,11 @@ a {
   width: 60vW;
 }
 
+.submenu a {
+  text-align: center;
+  width: 100%;
+}
+
 .submenu div {
   width: 50%;
   display: flex;
@@ -175,6 +180,11 @@ a {
   display: flex;
   width: 60vW;
   height: 100%;
+}
+
+.menu--rainbow a {
+  text-align: center;
+  width: 100%;
 }
 
 .menu--rainbow h3 {
