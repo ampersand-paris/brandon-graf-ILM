@@ -7,7 +7,7 @@ function HealingAbout() {
 
   const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/healing-about?populate=*`)
   const [index, setIndex] = useState(0)
-  console.log(data)
+  console.log(`${process.env.REACT_APP_BACKEND}api/healing-about?populate=*`)
 
   let testimonials = [];
 

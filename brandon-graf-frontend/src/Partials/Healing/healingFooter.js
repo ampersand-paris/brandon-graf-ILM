@@ -23,7 +23,7 @@ const HealingFooter = () => {
                         </div>    
                         <p>contact me:
                             <br></br>
-                            <a className='lilac--text' href="mailto:graf.brandon.ilm@gamil.com">graf.brandon.ilm@gamil.com</a>
+                            <a className='lilac--text' href="mailto:graf.brandon.ilm@gmail.com">graf.brandon.ilm@gmail.com</a>
                         </p>
                     </div>
                     <div className="flex column">
