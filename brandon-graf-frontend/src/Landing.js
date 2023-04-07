@@ -7,18 +7,18 @@ function Landing() {
     <div className="landing--page">
       <img className="landing--page--logo" src="/Images/Logo.png" alt="brand logo: a circle made of curvivng lines and Brandon Graf"/>
       <div className="landing--page--menu flex column">
-        <div className="flex">
+        <div className="rainbow--bar">
+          <div>
             <h1>
                 <Link to='/dance/about'>dance</Link>
             </h1>
-            <h1>|</h1>
+          </div>
+          <div></div>
+          <div>
             <h1>
                 <Link to='/healing/about'>healing</Link>
             </h1>
-        </div>
-        <div className="rainbow--bar">
-          <div></div>
-          <div></div>
+          </div>
           <div></div>
           <div></div>
           <div></div>
