@@ -21,7 +21,7 @@ const DanceFooter = () => {
                             <a href="https://www.instagram.com/brandon_graf95/?hl=en" target="_blank"><img className="social--icon" src="/Images/Instagram_Glyph_White.png" alt="Instagram logo"/></a>
                             <p>contact me:
                                 <br></br>
-                                <a className='white--text' href="mailto:brandongraf95@gamil.com">brandongraf95@gamil.com</a>
+                                <a className='white--text' href="mailto:brandongraf95@gmail.com">brandongraf95@gmail.com</a>
                             </p>
                         </div>
                     </div>
